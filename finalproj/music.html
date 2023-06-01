@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel = "stylesheet" href = "styles.css">
+	<title> Final Proj | Syna Gogte</title>
+	<style>
+		h1
+		{
+			text-align: center;
+		}
+		#contents
+		{
+			padding: 20px 50px;
+			padding-top: 40px;
+			margin:0 auto;
+		}
+		#contents p
+		{
+			padding-left:25px;
+			font-weight:bold;
+		}
+		iframe
+		{
+			float:left;
+			padding: 15px 25px;
+			border: none;
+/*			frame-border: 0;*/
+		}
+		#search
+		{
+			background-color:lightpink;
+		}
+	</style>
+</head>
+<body> 
+	<div id = "header">
+		<div id = navbar>
+			<a href = "index.html"> <h3> syna </h3> </a>
+			<div class = "leftside">
+				<a href = "projects.html"> <h3> projects </h3> </a>
+				<a href = "resume.html"> <h3> resume </h3> </a>
+				<a href = "aboutme.html"> <h3 class = "active"> about me </h3> </a>
+				<a href = "contact.html"> <h3> contact </h3> </a>
+			</div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+	
+	<h1> my favorite artists and their best songs </h1>
+	<div id = contents>
+		<div class = "row">
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6rZVy6FIG7lSJQMFXHo12z?utm_source=generator" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0PLhwCmQ7cC3ThRGPn3HxF?utm_source=generator" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3bdAnc53Dewox5VdCBmF10?utm_source=generator" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/17wMOhLqVB3DRCmTaLjwVM?utm_source=generator&theme=0" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		</div>
+		<div class = "row">
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3avYqdwHKEq8beXbeWCKqJ?utm_source=generator&theme=0" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Z0AM9HW78XIyZqF2BPasr?utm_source=generator" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6Rb0ptOEjBjPPQUlQtQGbL?utm_source=generator&theme=0" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3oLe5ZILASG8vU5dxIMfLY?utm_source=generator" width="300" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<div class = "clearfloat"> </div>
+		</div>
+		<div id = "playlist">
+			<p> listen to one of my favorite playlist here: </p>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1xEKZqcZXLALGoFrczCkQA?utm_source=generator&theme=0" width="1350" height="400" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			<div class = "clearfloat"> </div>
+		</div>
+		<div id = "search">
+			<h1> HI </h1>
+			<div id="spotify-player"></div>
+			<button id="togglePlay">Toggle Play</button>
+		</div>
+			<script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+			<script>
+  				window.onSpotifyWebPlaybackSDKReady = () => {
+    			const token = 'BQCu8t1fPZDagABJsegGmksiFBi4wYiWfpYmv0PDebVzVFfOHkzf5rXyqHuTw6ykhoKhu09n3-PPfM6gUN-4j8PWzpuglk2CTKu_aqVrqUilms1kPtuC-ILAc8UNooByx03P7rCC9acbbii9n1gCIMDdx9Yx_lXVaqAnSq-l_cxUwLWJSYG11CmOg1pQyWEetJ-de5yW3gSKByzBnyyQzisaD4sg';
+    			const player = new Spotify.Player({
+      				name: 'test',
+     				getOAuthToken: callback => { callback(token); },
+    			});
+
+    			//handling errors
+	    		player.addListener('initialization_error', ({ message }) => { console.error(message); });
+			   	player.addListener('authentication_error', ({ message }) => { console.error(message); });
+			    player.addListener('account_error', ({ message }) => { console.error(message); });
+			    player.addListener('playback_error', ({ message }) => { console.error(message); });
+
+			    //update player status
+			    player.addListener('player_state_changed', state => { console.log(state); });
+
+			    player.addListener('ready', ({ device_id }) => {
+	      			console.log('Ready with Device ID', device_id);
+	    		});
+
+	    		// Connect to the player
+	    		player.connect().then(success => {
+			      if (success) {
+			        console.log('The Web Playback SDK successfully connected to Spotify!');
+			      } else {
+			        console.log('Failed to connect to Spotify using the Web Playback SDK.');
+			      }
+			    }).catch(error => {
+			      console.error('Error connecting to Spotify:', error);
+			    });
+			    const searchContainer = document.getElementById('search');
+			    const spotifyPlayerContainer = document.getElementById('spotify-player');
+			    spotifyPlayerContainer.appendChild(player.container);
+			    searchContainer.appendChild(spotifyPlayerContainer);
+ 			};
+
+ 			document.getElementById('togglePlay').onclick = function() {
+  				player.togglePlay();
+			};
+
+			</script>
+		<div class = "clearfloat"> </div>
+	</div>
+	<div id = "footer">
+		<div class = "social">
+			<a href = "mailto:sgogte@usc.edu" target = "_blank"> 
+				<img src = "img/mail.png" alt = "email"> </a>
+			<a href = "https://www.instagram.com/synasgogte/" target = "_blank"> 
+				<img  src = "img/insta.png" alt = insta> </a>
+			<a href = "https://www.linkedin.com/in/syna-gogte-52076b206/" target = "_blank"> 
+				<img src = "img/linkedin.png" alt = linkedin> </a>
+			<a href = "https://github.com/synagogte" target = "_blank"> 
+				<img src = "img/github.png" alt = github> </a>
+			<a href = "https://www.pinterest.com/synagogte/" target = "_blank"> 
+				<img src = "img/pinterest.png" alt = pinterest> </a>
+			<a href = "https://open.spotify.com/user/jamhklyqd04l2jdpq8fckkib6?si=b8d104cea0b3413b" target = "_blank"> 
+				<img src = "img/spotify.png" alt = github> </a>
+		</div>
+	</div>
+	
+</body>
+</html>

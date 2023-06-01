@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel = "stylesheet" href = "styles.css">
+	<title> Final Proj | Syna Gogte</title>
+	<style>
+		.thumbnail{
+			float:left;
+			width:410px;
+			height:410px;
+/*			overflow:hidden;*/
+			margin: 30px;
+			margin-left:60px;
+			position:relative;
+		}
+		.thumbnail img
+		{
+			width:410px;
+			height:410px;
+		}
+		.thumbnail:hover .overlay
+		{
+			visibility: visible;
+			opacity: 1;
+		}
+		#content
+		{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.overlay
+		{
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+		  	left: 0;
+		 	width: 100%;
+		 	height: 100%;
+		  	opacity: 0;
+/*		  	background-color: rgba(0, 0, 0, 0.5);*/
+			background-color:rgba(255,182,193, .9);
+  			transition: opacity 1.5s ease-in-out;
+		}
+		.overlay-text
+		{
+			margin: 30px 25px;
+			padding:3px;
+/*			background-color:rgba(255,255,255, .7);*/
+		}
+		.overlay-text h2, .overlay-text p, .overlay-text h3, .overlay-text ul
+		{
+			font-family: serif;
+			margin:4px 0px;
+		}
+		.overlay-text h3
+		{
+			margin: 10px 0px;
+		}
+		.overlay-text a
+		{
+			color:black;
+		}
+		.topic h1
+		{
+			padding-left:50px;
+		}
+		a
+		{
+			color:lightpink;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body> 
+	<div id = "header">
+		<div id = navbar>
+			<a href = "index.html"> <h3> syna </h3> </a>
+			<div class = "leftside">
+				<a href = "projects.html"> <h3 class = "active"> projects </h3> </a>
+				<a href = "resume.html"> <h3> resume </h3> </a>
+				<a href = "aboutme.html"> <h3> about me </h3> </a>
+				<a href = "contact.html"> <h3> contact </h3> </a>
+			</div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+
+	<div id = "content">
+		<div class = "topic">
+		 <h1> all projects  </h1>
+			<div class = "thumbnail">
+				<a href = "todolist/index.html" target= "_blank"> <img src = "todolist/img/icon.jpeg" alt = "usc"> </a>
+				<div class="overlay">
+					<div class = "overlay-text">
+						<a href = "todolist/index.html" target = "_blank"> <h2> ToDo List</h2> </a>
+						<p>  <strong> Made with HTML, CSS, and JS </strong> </p>
+						<ul>
+							<li> Allows for user input of tasks </li>
+							<li>  Moves completed tasks to the bottom of the list and once unchecked, brings them back to the top </li>
+							<li>  Saves data so the list items stay even if user refreshes the page </li>
+						</ul>
+						<p>  <strong> Key Takeaways</strong> </p>
+						<ul>
+							<li> Used functions in Javascript to allow for user input and event handling and DOM manipulation </li>
+							<li>  Learned UI and UX considerations when making my list user friendly</li>
+						</ul>
+						<p>  <strong> Next Functionalities</strong> </p>
+						<p> I hope expand this web page to include a reminders list with time and alerting functionalities </p>
+						<p>  <strong> Click <a href = "todolist/index.html" target = "_blank"> here </a> to open the webpage in a new tab </strong> </p>
+					
+					</div>
+				</div>
+			</div>
+			<div class = "thumbnail">
+				<img src = "img/harker.jpg" alt = "harker"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> The Harker School </h2>
+						<!-- <p>  <strong> Viterbi College of Engineering </strong> </p> -->
+						<!-- <p> Major: Computer Science and Computer Engineering </p> -->
+						<p>   Graduated: June 2022 </p>
+						<p>  GPA: 4.45 W/3.97 UW </p>
+
+						<h3> Relevant Coursework</h3>
+						<p> AP Computer Science A (5), ATCS: Compilers, Data Structures, AP Physics C E&M (5), AP Physics C Mechanics (5), AP Calculus BC (5), AP Physics 2 (4), AP Physics 1 (5), AP Statistics (5),  </p>
+						
+						<h3> Clubs</h3>
+						<p> VP of Ops for BioTech Club </p>
+						<ul> 
+							<li>  Increased membership by over 200% </li>
+							<li> Found industry professionals to come speak during club meetings</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "clearfloat"> </div>
+		</div>
+
+
+		
+	</div>
+
+	
+	<div id = "footer">
+		<div class = "social">
+			<a href = "mailto:sgogte@usc.edu" target = "_blank"> 
+				<img src = "img/mail.png" alt = "email"> </a>
+			<a href = "https://www.instagram.com/synasgogte/" target = "_blank"> 
+				<img  src = "img/insta.png" alt = insta> </a>
+			<a href = "https://www.linkedin.com/in/syna-gogte-52076b206/" target = "_blank"> 
+				<img src = "img/linkedin.png" alt = linkedin> </a>
+			<a href = "https://github.com/synagogte" target = "_blank"> 
+				<img src = "img/github.png" alt = github> </a>
+			<a href = "https://www.pinterest.com/synagogte/" target = "_blank"> 
+				<img src = "img/pinterest.png" alt = pinterest> </a>
+			<a href = "https://open.spotify.com/user/jamhklyqd04l2jdpq8fckkib6?si=b8d104cea0b3413b" target = "_blank"> 
+				<img src = "img/spotify.png" alt = github> </a>
+		</div>
+	</div>
+
+</body>
+</html>

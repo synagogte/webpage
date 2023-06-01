@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="lightbox/css/lightbox.css" rel="stylesheet">
+	<title> Photo Gallery with Lightbox </title>
+	<style>
+		h1
+		{
+			text-align:center;
+		}
+		body
+		{
+			background-color: tan;
+		}
+		#wrapper
+		{
+			background-image: url('../lab06/img/back.jpeg');
+			width: 925px;
+/*			height: 1000px;*/
+			margin: 0 auto;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position:  center;
+			background-color: white;
+			padding-top: 5px;
+		}
+		.image img
+		{
+			height: 400px;
+			width: 273px;
+			border: 3px dashed white;
+/*			text-align:center;*/
+		}
+		.image
+		{
+/*			margin:0 auto;*/
+			padding: 14px;
+/*			padding-top: 50px;*/
+			float:left;
+		}
+		.image p
+		{
+			visibility: hidden;
+			text-align: center;
+		}
+		.image:hover p
+		{
+			visibility: visible;
+
+		}
+		#row1{
+			padding-top: 20px;
+			margin: 0 auto;
+			padding:0px;
+		}
+		.clearfloat{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id = wrapper>
+		<h1> Favorite Foods </h1>
+		<div id = "row1">
+			<div class = image>
+			<a href="../lab06/img/fruit.jpeg" data-lightbox="food"><img src="../lab06/img/fruit.jpeg" alt="Fruit"></a>
+			<p> <strong> Fruit </strong> </p>
+			</div>
+			<div class = image>
+			<a href="../lab06/img/sushi.jpeg" data-lightbox="food"><img src="../lab06/img/sushi.jpeg" alt="Sushi"></a>
+			<p> <strong> Sushi </strong></p>
+			</div>
+			<div class = image>
+			<a href="../lab06/img/pizza.jpeg" data-lightbox="food"><img src="../lab06/img/pizza.jpeg" alt="Pizza"></a>
+			<p> <strong> Pizza </strong> </p>
+			</div>	
+			<div class = clearfloat> </div>
+		</div>
+		<div id = row2>
+			<div class = image>
+			<a href="../lab06/img/rolls.jpeg" data-lightbox="food"><img src="../lab06/img/rolls.jpeg" alt="Summer Rolls"></a>
+			<p> <strong> Summer Rolls </strong> </p>
+			</div>
+			<div class = image>
+			<a href="../lab06/img/dumplings.jpeg" data-lightbox="food"><img src="../lab06/img/dumplings.jpeg" alt="Dumplings"></a>
+			<p> <strong> Dumplings </strong> </p>
+			</div>
+			<div class = image>
+			<a href="../lab06/img/matcha.jpeg" data-lightbox="food"><img src="../lab06/img/matcha.jpeg" alt="Matcha"></a>
+			<p> <strong> Matcha </strong></p>
+			</div>
+		</div>
+		<div class = clearfloat> </div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<script src="lightbox/js/lightbox.js"></script>
+	
+</body>
+
+</html>

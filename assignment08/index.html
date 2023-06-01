@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel = "stylesheet" href = "styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+	<title> Final Proj | Syna Gogte</title>
+
+	<style>
+		body
+		{
+			font-family: 'Rubik', sans-serif;	
+		}
+		.typewriter h1 
+		{
+/*			line-height:250px;*/
+	  		color: black;
+/*	  		background: lightpink;*/
+/*	  		width: 300px;*/
+	  		padding: 10px;
+	  		font-size: 70px;
+	  		font-family: sans-serif;
+			overflow: hidden; /* Ensures the content is not revealed until the animation */
+			border-right: .15em solid #e2619f; /* The typwriter cursor */
+			white-space: nowrap; /* Keeps the content on a single line */
+			margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+			letter-spacing: .1em; /* Adjust as needed */
+	 		text-align:center;
+		 	animation: 
+		    typing 4s steps(35,end) ,
+		    blink-caret .5s infinite;
+/*		    bgdcolor 5s steps(30,end);*/
+		    height: 70px;
+		    margin-top: 200px;
+		    margin-bottom: 20px;
+/*		    width: 350px;*/
+		}
+		/* The typing effect */
+		@keyframes typing {
+		  from { width: 0 }
+		  to { width: 40% }
+		}
+
+		/* The typewriter cursor effect */
+		@keyframes blink-caret {
+		  from, to { border-color: transparent }
+		  50% { border-color: #e2619f }
+		}
+
+		@keyframes bgdcolor 
+		{
+			from {background: rgba(255,182,193, 0)}
+			to {background: rgba(255,182,193, 1)  }
+		}
+		#contents
+		{
+			margin: 300px 0px;
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.fadein
+		{
+			position:relative;
+			left:0px;
+			animation: fadein 2s forwards;
+/*			move-right 2s forwards;*/
+/*			float:left;*/
+			width:350px;
+		}
+		@keyframes fadein
+		{
+			from{opacity: 0;}
+			to{opacity: 1}
+		}
+		@keyframes move-right
+		{
+			from{left: -600px}
+			to{left: 0px}
+		}
+		#me{
+			width: 250px;
+			font-size:13px;
+			position:relative;
+			left:800px;
+/*			border: 1px solid lightpink;*/
+			padding:5px;
+			margin-bottom: 30px;
+			font-family: 'Rubik', sans-serif;
+		}
+		#me p {
+			margin: 0px; 
+			font-family: 'Rubik', sans-serif;		
+		}
+		img
+		{
+			position: relative;
+			top:0px;
+			float:left;
+			margin-left:100px;
+			width:350px;
+			height:350px;
+			border-radius:10%;
+			overflow: hidden;
+/*			border:1px dashed lightpink;*/
+
+		}
+		.p1
+		{
+			font-family: 'Rubik', sans-serif;
+			float:left;
+			position:relative;
+			width: 380px;
+			top:60px;
+			left: 50px;
+			margin-left:50px;
+
+		}
+/*		#academic a, #personal a */
+		.button
+		{
+
+			text-decoration: none;
+			color:black;
+			background: lightpink;
+			padding:2px;
+			box-shadow: 2px 2px #e2619f;
+			padding-left:3px;
+			font-size:14px;
+
+		}
+		.button:hover
+		{
+			font-size:16px;
+		}
+
+	</style>
+
+</head>
+<body> 
+	<div id = "header">
+		<div id = navbar>
+			<a href = "index.html"> <h3 class = "active"> syna </h3> </a>
+			<div class = "leftside">
+				<a href = "resume.html"> <h3> resume </h3> </a>
+				<a href = "aboutme.html"> <h3> about me </h3> </a>
+				<a href = "contact.html"> <h3> contact </h3> </a>
+			</div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+	
+	
+	<div class="typewriter">
+			<h1>Syna Gogte :)</h1>
+	</div>
+	<div id = "me">
+		<p> Hi!!! I'm a student at the University of Southern California (USC) earning my Bachelors in Computer Engineering and Computer Science (CECS). </p>
+		<div class = "clearfloat"> </div>
+	</div>
+	<div id = "contents">
+		<div id = "academic">
+				<img src = "img/vscode.png" alt = "vscode" class = "fadein"> 
+				<div class = "p1">
+					<h2> tech! </h2>
+					<p> currently, i intern at BMC software as a part of the SEAL R&D team! i am interested in exploring how engineers can use AI to improve user experience (personally i recently learned about the DJ feature on spotify and i am absolutely fascinated by it). to learn more about my academic and technical interests/past experiences check out my <a href = "resume.html" class = "button"> <strong class = "button">resume!</strong></a></p>
+				</div>
+
+			<div class = "clearfloat"> </div>
+		</div>
+
+		<div id = "personal">
+				
+				<div class = "p1">
+					<h2> me! </h2>
+					<p> in my free time, you will catch me exploring new music, reading, hiking, drinking matcha/ exploring cute cafes, traveling, or going to the gym. to learn more about my personal intersts (essentially what differentiates me from a robot), check out my <a href = "aboutme.html" class = "button"> <strong>about me page!</strong></a></p>
+				</div>
+				<img src = "img/me2.jpg" alt = "me" class = "fadein"> 
+
+			<div class = "clearfloat"> </div>
+		</div>
+
+		<div id = "contact">
+				<img src = "img/mail2.jpg" alt = "mail" class = "fadein"> 
+				<div class = "p1">
+					<h2> contact me! </h2>
+					<p> please feel free to reach out to me for academic/ work reasons or just to chat or learn more about me! to contact me, check out my <a href = "contact.html" class = "button"> <strong class = "button">contact page!</strong></a> or check out my socials linked at the bottom of each page!</p>
+				</div>
+				
+
+			<div class = "clearfloat"> </div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+
+
+	<div id = "footer">
+		<div class = "social">
+			<a href = "mailto:sgogte@usc.edu" target = "_blank"> 
+				<img src = "img/mail.png" alt = "email"> </a>
+			<a href = "https://www.instagram.com/synasgogte/" target = "_blank"> 
+				<img  src = "img/insta.png" alt = insta> </a>
+			<a href = "https://www.linkedin.com/in/syna-gogte-52076b206/" target = "_blank"> 
+				<img src = "img/linkedin.png" alt = linkedin> </a>
+			<a href = "https://github.com/synagogte" target = "_blank"> 
+				<img src = "img/github.png" alt = github> </a>
+			<a href = "https://www.pinterest.com/synagogte/" target = "_blank"> 
+				<img src = "img/pinterest.png" alt = pinterest> </a>
+			<a href = "https://open.spotify.com/user/jamhklyqd04l2jdpq8fckkib6?si=b8d104cea0b3413b" target = "_blank"> 
+				<img src = "img/spotify.png" alt = github> </a>
+		</div>
+	</div>
+</body>
+</html>

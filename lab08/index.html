@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Syna Gogte | Responsive Student Page </title>
+	 <meta charset="UTF-8">
+	  <meta name="description" content="responsive student page">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="Syna Gogte">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		strong 
+		{
+			color: deepskyblue;
+		}
+		img
+		{
+			height: 200px;
+			width: auto;
+		}
+		body
+		{
+			background-image:url("background.jpeg");
+			background-repeat: repeat-x;
+			background-size: cover;
+			background-position: center;
+		}
+		
+		#row1 a:link
+		{
+			color:white;
+		}
+		#container
+		{
+			width: 800px;
+			margin-left:auto;
+			margin-right:auto;
+			border: 3px dashed white;
+		}
+		#row1
+		{
+			padding: 5px;
+			text-align: center;
+			color:white;
+			background-color: #839788;
+			
+			
+			padding-bottom:20px;
+		}
+		#row2
+		{
+/*			background-color: #F5E4D7;*/
+/*			background-color: #E1DFDA;*/
+/*			background-color: #F1DAC8;*/
+			background-color: #E5D1D0;
+			padding:10px;
+			
+		}
+		#row3
+		{
+/*			text-align: center;*/
+			background-color: #DFCDC0;	
+			padding:10px;
+			
+		}
+		.col
+		{
+			float:left;
+/*			padding-right:80px;*/
+/*			padding-left: 20px;*/
+			padding-bottom:50px;
+			padding-left:10px;
+			width: 380px;
+		}
+		/* implementations for phone screen size with is <= 767px */
+		@media (max-width:767px)
+		{
+			body{padding-top:0px;}
+			.col {float:none; width:auto; margin: 0px;}
+			#container{
+			width: auto; margin:0px;
+			}
+			#row1,#row2,#row3{
+			width: auto; 
+			margin:0px;
+/*			padding:0px;*/
+			}
+			/*p{
+				margin:0px;
+				padding:10px;
+			}*/
+			
+		}
+	</style>
+</head>
+<body>
+	<div id = container> 
+		<div id = row1> 
+			<h1> Syna Gogte </h1>
+			<p> <a href = "mailto:sgogte@usc.edu"> sgogte@usc.edu </a> </p>
+			<div style = "clear:both"> </div>
+		</div>
+		
+		<div id = "row2">
+			<div class = "col">
+				<p> Favorite color: <strong> blue </strong></p>
+				<p> Favorite website: <a href = "https://www.pinterest.com/" target = "_blank"> pinterst </a></p>
+				<h2> Favorite activity: </h2>
+				<img src = "dance.jpeg" alt = "dance">
+			</div>
+			<div class = "col">
+				<h3> School Schedule </h3>
+				<ol>
+					<li> CS 104 </li>
+					<li> EE 109 </li>
+					<li> GESM 120 </li>
+					<li> MATH 225 </li>
+					<li> ITP 104 </li>
+				</ol>
+			</div>
+			<div style = "clear:both"> </div>
+		</div>
+
+		<div id = "row3">
+			<div class = "col">
+				<h3> Assignments </h3>
+				<ul>
+					<li> <a href="assignment01/index.html" > Assignment 01: Web Resume </a> </li>
+					<li> <a href="assignment02/index.html" > Assignment 02: Favorite TV Show </a> </li>
+					<li> <a href="assignment03/index.html" > Assignment 03: Two-Column Favorite TV Show </a> </li>
+					<li> <a href="assignment04/index.html" > Assignment 04: Calendar </a> </li>
+					<li> <a href="assignment05/index.html" > Assignment 05: Favorite TV Show Photo Collage</a> </li>
+					<li> <a href="assignment06/index.html" > Assignment 06: Favorite TV Show Captioned Photo Collage</a> </li>
+				</ul>
+			</div>
+			<div class = "col">
+				<h3> Lab </h3>
+				<ul>
+					<li> <a href="lab02/index.html" > Lab 02: Student Page </a> </li>
+					<li> <a href="lab03/index.html" > Lab 03: Updated Resume </a> </li>
+					<li> <a href="lab04/index.html" > Lab 04: Updated Student Page </a> </li>
+					<li> <a href="lab05/index.html" > Lab 05: Form Page </a> </li>
+					<li> <a href="lab06/index.html" > Lab 06: Simple Photo Gallery </a> </li>
+					<li> <a href="lab07/index.html" > Lab 07: Picture Puzzle </a> </li>
+				</ul>
+			</div>
+			<div style = "clear:both"> </div>
+		</div>
+	</div>
+
+</html>

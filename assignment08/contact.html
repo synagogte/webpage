@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel = "stylesheet" href = "styles.css">
+	<title> Final Proj | Syna Gogte</title>
+	<style>
+		.thumbnail
+		{
+			float:left;
+/*			width:500px;*/
+/*			padding:5px;*/
+		}
+		.thumbnail img
+		{
+			width:250px;
+			height:320px;
+			padding:0px;
+			overflow:hidden;
+		}
+		.col
+		{
+			float:left;
+			width:250px;
+			margin:0px 2px;
+			
+		}
+		#pics-form
+		{
+			width:1350px;
+			margin: 0 auto;
+		}
+		#form
+		{
+			float:left;
+			left: 700px;
+			border:3px dashed lightpink;
+			width:550px;
+/*			margin:0 auto;*/
+			margin: 30px 50px;
+/*			background-color:lightpink;*/
+		}
+		.form-row
+		{
+			padding:10px;
+			font-family:sans-serif;
+		}
+		.submit-btn
+		{
+			width:100px;
+			background-color:#f7e6d4;
+		}
+		.submit-btn:hover
+		{
+			background-color:#e2619f;
+		}
+		.submit-btn a
+		{
+			text-decoration:none;
+			color:black;
+		}
+		#form h2
+		{
+			text-align:center;
+			font-family:serif
+		}
+		#buttons
+		{
+			width:205px;
+			margin:0 auto;
+			padding-bottom:10px;
+		}
+		#question
+		{
+			margin-left:50px;
+			width:480px;
+			height:80px;
+			margin-top:5px;
+		}
+		#content
+		{
+			float:left;
+			margin-left:100px;
+			width: 550px;
+/*			border: 2px solid black;*/
+		}
+	</style>
+</head>
+<body> 
+	<div id = "header">
+		<div id = navbar>
+			<a href = "index.html"> <h3> syna </h3> </a>
+			<div class = "leftside">
+				<a href = "resume.html"> <h3> resume </h3> </a>
+				<a href = "aboutme.html"> <h3> about me </h3> </a>
+				<a href = "contact.html"> <h3 class = "active"> contact </h3> </a>
+			</div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+	
+
+
+	<div id = "pics-form">
+
+		<div id = "content">
+			<div class = "col">
+				<div class = thumbnail> 
+					<img src = "img/1.jpg" alt = "cake"> 
+				</div>
+				<div class = thumbnail> 
+					<img src = "img/2.jpg" alt = "flowers"> 
+				</div>
+				<div class = thumbnail> 
+					<img src = "img/9.jpg" alt = "flowers"> 
+				</div>
+				<div class = thumbnail> 
+					<img src = "img/5.jpg" alt = "flowers"> 
+				</div>
+				<div class = "clearfloat"> </div>
+			</div>
+			<div class = "col">
+				<div class = thumbnail> 
+					<img src = "img/3.jpg" alt = "flowers"> 
+				</div>
+				<div class = thumbnail> 
+					<img src = "img/4.jpg" alt = "flowers"> 
+				</div>
+				<div class = thumbnail> 
+					<img src = "img/8.jpg" alt = "flowers"> 
+				</div>
+				<div class = thumbnail> 
+					<img src = "img/6.jpg" alt = "flowers"> 
+				</div>
+			</div>
+			<div class = "clearfloat"> </div>
+		</div>
+			
+		<div id = "form">
+			<form action = "submit.html">
+				<h2> contact form </h2>
+				<div class="form-row">
+					<label class="main-label" for="name">name:</label>
+					<input id="name" type="text" placeholder=" first last" required>
+				</div>
+				<div class="form-row">
+					<label class="main-label" for="email">email:</label>
+					<input id="email" type="email" placeholder="name@ex.com" required>
+				</div>
+
+				<div class = "form-row">
+					<label for="reason" >reason:</label>
+					<select id = "reason" >
+						<option value = "select" > - select - </option>
+						<option value = "academic" > academic </option>
+						<option value = "personal" > personal </option>
+						<option value = "work" > work </option>
+					</select>
+				</div>
+
+				<div class="form-row">
+					<label class="main-label" for="question">feel free to leave a message!</label><br>
+					<textarea id="question" placeholder="enter your message here"></textarea>
+				</div>
+				
+				<div class="form-row">
+				<div id="buttons">
+					<button class="submit-btn" type="submit">submit</button>
+					<button class="submit-btn" type="reset">reset</button>
+				</div>
+				</div>
+
+			</form>
+			<div class = "clearfloat"> </div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+
+
+	<div id = "footer">
+		<div class = "clearfloat"> </div>
+		<div class = "social">
+			<a href = "mailto:sgogte@usc.edu" target = "_blank"> 
+				<img src = "img/mail.png" alt = "email"> </a>
+			<a href = "https://www.instagram.com/synasgogte/" target = "_blank"> 
+				<img  src = "img/insta.png" alt = insta> </a>
+			<a href = "https://www.linkedin.com/in/syna-gogte-52076b206/" target = "_blank"> 
+				<img src = "img/linkedin.png" alt = linkedin> </a>
+			<a href = "https://github.com/synagogte" target = "_blank"> 
+				<img src = "img/github.png" alt = github> </a>
+			<a href = "https://www.pinterest.com/synagogte/" target = "_blank"> 
+				<img src = "img/pinterest.png" alt = pinterest> </a>
+			<a href = "https://open.spotify.com/user/jamhklyqd04l2jdpq8fckkib6?si=b8d104cea0b3413b" target = "_blank"> 
+				<img src = "img/spotify.png" alt = github> </a>
+		</div>
+	</div>
+</body>
+</html>

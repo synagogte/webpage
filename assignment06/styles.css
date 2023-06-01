@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@font-face
+{
+	font-family: "Coolvetica";
+	src:url("fonts/coolvetica rg.otf");
+}
+#header
+{
+	text-align: center;
+	background-image:url("images/tgp_header.jpeg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0px;
+}	
+h1
+{
+	
+	color:white;
+	font-size:55px;
+	text-align:center;
+	padding: 10px;
+	text-shadow: 5px 2px 2px #5C4033;
+	margin: 0px;
+}
+body
+{
+	background-color: #D2B48C;
+	margin: 0px;
+}
+#wrapper
+{
+	width: 1000px;
+	background-color:white;
+	align-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #453F2C;
+	
+}
+#footer
+{
+	background-color:saddlebrown;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+	font-weight:bold;
+	padding: 0px;
+}
+.landscape
+{
+	height: 100%;
+	width: auto;
+}
+
+/* portrait class adjust image to width 100%, height auto */
+.portrait
+{
+	width: 100%;
+	height: auto;
+}
+.clearfloat
+{
+	clear:both;
+}
+#nav
+{
+	width: 450px;
+	margin: 0 auto;
+}
+#nav-wrapper
+{
+	background-color: #DFBD69;
+	font-size: 0px;
+}
+#nav a 
+{
+	width:220px;
+	color: #000;
+	height: 50px;
+	font-size:21px;
+	display:inline-block;
+	text-align:center;
+	line-height:50px;
+	text-decoration:none;
+}
+.thumbnail
+{
+	float:left;
+/*	background-color:lightgreen;*/
+	margin:5px;
+	overflow: hidden;
+	position:relative;
+}
+#nav a:hover
+{
+	background-color:saddlebrown;
+	color:white;
+}
+#nav .active
+{
+	background-color:black;
+	color:white;
+}
+
+#nav a
+{
+	display:block;
+	text-decoration:none;
+}
+#nav ul 
+{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+
+}
+#nav li
+{
+	float:left;
+	position:relative;
+}
+
+#nav ul ul
+{
+	position:absolute;
+	visibility:hidden;
+	background-color: #DFBD69;
+	top:50px;
+	z-index: 9;
+}
+#nav li:hover > ul
+{
+	visibility:visible;
+
+}

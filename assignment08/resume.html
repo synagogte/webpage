@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel = "stylesheet" href = "styles.css">
+	<title> Final Proj | Syna Gogte</title>
+	<style>
+		.thumbnail{
+			float:left;
+			width:410px;
+			height:410px;
+/*			overflow:hidden;*/
+			margin: 30px;
+			margin-left:60px;
+			position:relative;
+		}
+		.thumbnail img
+		{
+			width:410px;
+			height:410px;
+		}
+		.thumbnail:hover .overlay
+		{
+			visibility: visible;
+			opacity: 1;
+		}
+		#content
+		{
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.overlay
+		{
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+		  	left: 0;
+		 	width: 100%;
+		 	height: 100%;
+		  	opacity: 0;
+/*		  	background-color: rgba(0, 0, 0, 0.5);*/
+			background-color:rgba(255,182,193, .9);
+  			transition: opacity 1.5s ease-in-out;
+		}
+		.overlay-text
+		{
+			margin: 30px 25px;
+			padding:3px;
+/*			background-color:rgba(255,255,255, .7);*/
+		}
+		.overlay-text h2, .overlay-text p, .overlay-text h3, .overlay-text ul
+		{
+			font-family: serif;
+			margin:4px 0px;
+		}
+		.overlay-text h3
+		{
+			margin: 10px 0px;
+		}
+		.topic h1
+		{
+			padding-left:50px;
+		}
+		a
+		{
+			color:lightpink;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body> 
+	<div id = "header">
+		<div id = navbar>
+			<a href = "index.html"> <h3> syna </h3> </a>
+			<div class = "leftside">
+				<a href = "resume.html"> <h3 class = "active"> resume </h3> </a>
+				<a href = "aboutme.html"> <h3> about me </h3> </a>
+				<a href = "contact.html"> <h3> contact </h3> </a>
+			</div>
+		</div>
+		<div class = "clearfloat"> </div>
+	</div>
+
+	<div id = "content">
+		<div class = "topic">
+			<h1> education </h1>
+			<div class = "thumbnail">
+				<img src = "img/usc2.jpg" alt = "usc"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> University of Southern California </h2>
+						<p>  <strong> Viterbi College of Engineering </strong> </p>
+						<p> B.S. Computer Science and Computer Engineering </p>
+						<p>   Expected Graduation: Spring 2026 </p>
+						<p>  Major GPA: 4.0/4.0 </p>
+
+						<h3> Relevant Coursework</h3>
+						<p> Data Structures and OOD, Intro to Embedded Systems, Discrete Methods, Linear Algebra </p>
+
+						<h3> Clubs</h3>
+						<p> Member of HackerXP </p>
+						<ul> 
+							<li> Wrote informational materials such as event FAQ and welcome packets for members </li>
+							<li>Planned opening ceremony and 4+ events with 8 teammates to enhance the hacker experience </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "thumbnail">
+				<img src = "img/harker.jpg" alt = "harker"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> The Harker School </h2>
+						<!-- <p>  <strong> Viterbi College of Engineering </strong> </p> -->
+						<!-- <p> Major: Computer Science and Computer Engineering </p> -->
+						<p>   Graduated: June 2022 </p>
+						<p>  GPA: 4.45 W/3.97 UW </p>
+
+						<h3> Relevant Coursework</h3>
+						<p> AP Computer Science A (5), ATCS: Compilers, Data Structures, AP Physics C E&M (5), AP Physics C Mechanics (5), AP Calculus BC (5), AP Physics 2 (4), AP Physics 1 (5), AP Statistics (5),  </p>
+						
+						<h3> Clubs</h3>
+						<p> VP of Ops for BioTech Club </p>
+						<ul> 
+							<li>  Increased membership by over 200% </li>
+							<li> Found industry professionals to come speak during club meetings</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "clearfloat"> </div>
+		</div>
+
+
+		<div class = "topic">
+			<h1> work experience </h1>
+			<div class = "thumbnail">
+				<img src = "img/safeway3.jpg" alt = "safeway"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> Safeway, Inc. </h2>
+						<p>  <strong> Courtesy Clerk</strong> </p>
+						<p>  May 2021-August 2021 </p>
+
+						<h3> What I Did </h3>
+						<ul> 
+							<li> Greeted over 200 customers a day </li>
+							<li> Assisted busy cashiers by bagging groceries and maintained a clean workspace by sweeping and putting go backs away</li>
+							<li> Maintained a clean workspace by sweeping and putting away go backs</li>
+						</ul>
+
+						<h3> Fun Experiences/ Key Takeaways</h3>
+						<ul> 
+							<li> Pro Tip: first pat dry any liquid spills before using a mop ... learned that the hard way </li>
+							<li> Coworkers tend to be really cool friends </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "thumbnail ">
+				<img src = "img/stickers.jpg" alt = "stickers"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> StickersByS </h2>
+						<p>  <strong> Founder </strong> </p>
+						<!-- <p> Major: Computer Science and Computer Engineering </p> -->
+						<p>  June 2020-August 2021 </p>
+
+						<h3> What I Did </h3>
+						<ul> 
+							<li> Sold 300+ stickers, reaching over half the United States </li>
+							<li>  Built marketing and organizational skills by creating new ways to advertise products</li>
+							<li> Earned a profit of 1000+ dollars</li>
+						</ul>
+						<h3> Insider Tips</h3>
+						<ul> 
+							<li> I used procreate (on iPad) to create the stickers </li>
+							<li> Etsy is a pretty good website to sell if you don't want to create your own</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "clearfloat"> </div>
+		</div>
+
+		<div class = "topic">
+			<h1> internships/ research </h1>
+			
+			<div class = "thumbnail ">
+				<img src = "img/ee.jpg" alt = "usc" class = "electrical-engineering"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> UCSC Summer Internship Program (SIP) </h2>
+						<p>  <strong> Electrical Engineering Internship </strong> </p>
+						<!-- <p> Major: Computer Science and Computer Engineering </p> -->
+						<p>  June 2021-August 2021 </p>
+						<ul> 
+							<li> Conducted literature review to determine the best semiconductor for radiation detectors </li>
+							<li>  Honed my ability to read technical journal articles</li>
+							<li> Produced a Python program to group different individuals together</li>
+						</ul>
+
+						<p>  <strong> Astronomical Engineering Internship </strong> </p>
+						<p>  June 2020-August 2020 </p>
+						<ul> 
+							<li> Assisted in writing a published research paper, published in Astronomische Nachtrictung </li>
+							<li> Created a poster and spoke for the Online iPoster session at the 237th meeting of the American Astronomical Society </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class = "thumbnail">
+				<img src = "img/swe.jpg" alt = "swe"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> OmniPayments </h2>
+						<p>  <strong> Software Engineering Internship</strong> </p>
+						<p>  Dec 2022-Present </p>
+
+						<ul> 
+							<li> Created screens on Grafana to produce visuals</li>
+							<li> Improved upon debugging skills</li>
+							<li> Enhanced my skill for learning new skills</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class = "clearfloat"> </div>
+		</div>
+		<div class = "topic">
+			<h1> skills </h1>
+			<div class = "thumbnail">
+				<img src = "img/tech.jpg" alt = "tech"> 
+				<div class="overlay">
+					<div class = "overlay-text">
+						<h2> Technical Skills</h2>
+						<p> <strong> Coding Languages</strong> <p>
+						<ul> 
+							<li> HTML/CSS</li>
+							<li> C++</li>
+							<li> Java</li>
+							<li> Python</li>
+						</ul>
+						<p> <strong> Other </strong> </p>
+						<ul>
+							<li> Grafana </li>
+						</ul>
+						<h2> Non-Technical Skills</h2>
+						<ul> 
+							<li> Customer service </li>
+							<li> Volunteered 100+ hours</li>
+							<li> Business Management </li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class = "clearfloat"> </div>
+		</div>
+		<p> if you want a more detailed version of this, <a href="resume.pdf" target = "_blank"> here </a> is a pdf version of my resume.
+		<div class = "clearfloat"> </div>
+	</div>
+
+	
+	<div id = "footer">
+		<div class = "social">
+			<a href = "mailto:sgogte@usc.edu" target = "_blank"> 
+				<img src = "img/mail.png" alt = "email"> </a>
+			<a href = "https://www.instagram.com/synasgogte/" target = "_blank"> 
+				<img  src = "img/insta.png" alt = insta> </a>
+			<a href = "https://www.linkedin.com/in/syna-gogte-52076b206/" target = "_blank"> 
+				<img src = "img/linkedin.png" alt = linkedin> </a>
+			<a href = "https://github.com/synagogte" target = "_blank"> 
+				<img src = "img/github.png" alt = github> </a>
+			<a href = "https://www.pinterest.com/synagogte/" target = "_blank"> 
+				<img src = "img/pinterest.png" alt = pinterest> </a>
+			<a href = "https://open.spotify.com/user/jamhklyqd04l2jdpq8fckkib6?si=b8d104cea0b3413b" target = "_blank"> 
+				<img src = "img/spotify.png" alt = github> </a>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Simple Photo Gallery </title>
+	<style>
+		h1
+		{
+			text-align:center;
+		}
+		body
+		{
+			background-color: tan;
+		}
+		#wrapper
+		{
+			background-image: url('img/back.jpeg');
+			width: 925px;
+/*			height: 1000px;*/
+			margin: 0 auto;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position:  center;
+			background-color: white;
+			padding-top: 5px;
+		}
+		img
+		{
+			height: 400px;
+			width: 273px;
+			border: 3px dashed white;
+/*			text-align:center;*/
+		}
+		.image
+		{
+/*			margin:0 auto;*/
+			padding: 14px;
+/*			padding-top: 50px;*/
+			float:left;
+		}
+		.image p
+		{
+			visibility: hidden;
+			text-align: center;
+		}
+		.image:hover p
+		{
+			visibility: visible;
+
+		}
+		#row1{
+			padding-top: 20px;
+			margin: 0 auto;
+			padding:0px;
+		}
+		.clearfloat{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id = wrapper>
+		<h1> Favorite Foods </h1>
+		<div id = "row1">
+			<div class = image>
+			<img src="img/fruit.jpeg" alt="Fruit">
+			<p> <strong> Fruit </strong> </p>
+			</div>
+			<div class = image>
+			<img src="img/sushi.jpeg" alt="Sushi">
+			<p> <strong> Sushi </strong></p>
+			</div>
+			<div class = image>
+			<img src="img/pizza.jpeg" alt="Pizza">
+			<p> <strong> Pizza </strong> </p>
+			</div>	
+			<div class = clearfloat> </div>
+		</div>
+		<div id = row2>
+			<div class = image>
+			<img src="img/rolls.jpeg" alt="Summer Rolls">
+			<p> <strong> Summer Rolls </strong> </p>
+			</div>
+			<div class = image>
+			<img src="img/dumplings.jpeg" alt="Dumplings">
+			<p> <strong> Dumplings </strong> </p>
+			</div>
+			<div class = image>
+			<img src="img/matcha.jpeg" alt="Matcha">
+			<p> <strong> Matcha </strong></p>
+			</div>
+		</div>
+		<div class = clearfloat> </div>
+
+	</div>
+
+</body>
+
+</html>

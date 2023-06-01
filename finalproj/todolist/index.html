@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel = "stylesheet" href = "style.css">
+	<title> ToDo List </title>
+</head>
+
+<body>
+	<div class = "container">
+		<div class = "todo-app">
+			<h2> ToDo List <img src = "img/icon.jpeg" alt = "icon"> </h2>
+			<div class = "row">
+				<input type = "text" id = "input-box" placeholder="add task">
+				<button onclick = "addTask()"> add </button>
+			</div>
+			<ul id ="list-container" onclick = "checked(this)">
+				<!-- <li class = "checked"> hi </li>
+				<li> hello </li> -->
+			</ul>
+		</div>
+	</div>
+	<script src = "script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Syna Gogte | Picture Puzzle </title>
+	<style>
+		h1
+		{
+			text-align:center;
+			padding-bottom:10px;
+			color:white;
+			text-shadow:2px 2px 5px black;
+		}
+		#wrapper
+		{
+			width:565px;
+			margin:0 auto;
+/*			padding:50px;*/
+/*			background-color: white;*/
+		}
+		body
+		{
+/*			background-color: green;*/
+			margin: 0 auto;	
+			padding:20px;
+			background-image: url("img/background.webp");
+			background-size: cover;
+		}
+		img
+		{
+			float:left;
+			width:188px;
+			height:235px;
+		}
+		#r1c2
+		{
+			position:relative;
+			top: -5px;
+			left: 5px;
+			z-index: 1;
+			box-shadow: 4px 4px 15px lightgreen;
+		}
+		#r2c3
+		{
+			position:relative;
+			top: 5px;
+			left: 5px;
+			z-index: 5;
+			box-shadow: 4px 4px 15px lightgreen;
+		}
+		#r3c1
+		{
+			position:relative;
+			top: -5px;
+			left: 5px;
+			z-index: 5;
+			box-shadow: 4px 4px 15px lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1> Sunglasses </h1>
+	<div id= "wrapper">
+		<div class = "row">
+			<img src = "pics/row-1-column-1.jpg" alt="r1c1">
+			<img id = "r1c2" src = "pics/row-1-column-2.jpg" alt="r1c2">
+			<img src = "pics/row-1-column-3.jpg" alt="r1c3">
+			<div style = "clear:both"> </div>
+		</div>
+		<div class = "row">
+			<img src = "pics/row-2-column-1.jpg" alt="r2c1">
+			<img src = "pics/row-2-column-2.jpg" alt="r2c2">
+			<img id = "r2c3" src = "pics/row-2-column-3.jpg" alt="r2c3">
+			<div style = "clear:both"> </div>
+		</div>
+		<div class = "row">
+			<img id = "r3c1" src = "pics/row-3-column-1.jpg" alt="r3c1">
+			<img src = "pics/row-3-column-2.jpg" alt="r3c2">
+			<img src = "pics/row-3-column-3.jpg" alt="r3c3">
+			<div style = "clear:both"> </div>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>

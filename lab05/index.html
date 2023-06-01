@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form | Syna Gogte </title>
+	<style>
+		h1
+		{
+			text-align: center;
+			background-color: #FEE1F0;
+			color: green;
+			line-height:150px;
+			text-shadow: 2px 2px 2px white ;
+			margin-top: 0px;
+		}
+		body
+		{
+
+			margin: 0px;
+/*			background-color: #CCE2CB;*/
+			background-color: #B6CFB6;
+
+		}
+		img
+		{
+			text-align: center;
+			margin: 0 auto;
+			border: 1px solid black;
+			display: block;
+			width: 500px;
+		}
+		form
+		{
+			padding-top: 5px;
+			text-align:left;
+			margin: 0 auto;
+			margin-top: 50px; 
+			background-color: #ECD5E3;
+			width: 500px;
+			padding-left: 10px;
+			padding-bottom: 5px;
+		}
+		.form-row {
+			margin: 10px 0px;
+			clear:both;
+		}
+		.end-row {
+			margin: 20px 0px;
+			clear:both;
+		}
+		#message {
+			width:50%;
+		}
+	</style>
+</head>
+<body>
+	<h1> Frozen Yogurt </h1>
+	<img src = "froyo.jpeg" alt = "froyo">
+
+	<form action="confirmation.html">
+		<div class="form-row">
+		<label for = "name"> Name: </label>
+		<input id = "name" type = "text" placeholder = "name" required>
+		</div>
+
+		<div class="form-row">
+		<label for = "email"> Email: </label>:
+		<input id = "email" type = "email" placeholder = "ttrojan@usc.edu" required>
+		</div>
+
+		<div class="form-row">
+		<label> Size: </label>
+		<label for = "4oz"> 
+		<input id = "4oz" type = "radio" name = "size" required>  4 oz </label>
+		<label for = "8oz"> 
+		<input id = "8oz" type = "radio" name = "size" required> 8 oz </label>
+		<label for = "12oz"> 
+		<input id = "12oz" type = "radio" name = "size" required> 12 oz </label>
+		<label for = "16oz"> 
+		<input id = "16oz" type = "radio" name = "size" required> 16 oz </label>
+		</div>
+
+		<div class="form-row">
+		<label for="flavor" >Flavor:</label>
+		<select id = "flavor" >
+			<option value = "tart" > Tart </option>
+			<option value = "chocolate" > Chocolate </option>
+			<option value = "strawberry" > Strawberry </option>
+			<option value = "matcha" > Matcha </option>
+		</select>
+		</div>
+
+		<div class="form-row">
+		<label> Toppings: </label>
+		<div class="form-row">
+		<label for = "strawberries"> <input id = "strawberries" type = "checkbox" name = "strawberries"> strawberries </label> </div>
+		<div class="form-row">
+		<label for = "chocolatechips"><input id = "chocolatechips" type = "checkbox" name = "chocolatechips "> chocolate chips </label></div>
+		<div class="form-row">
+		<label for = "mango"><input id = "mango" type = "checkbox" name = "mango chunks"> mango chunks </label></div>
+		<div class="form-row">
+		<label for = "oreos"><input id = "oreos" type = "checkbox" name = "oreo crumbs"> oreo crumbs </label></div>
+		<div class="form-row">
+		<label for = "sprinkles"><input id = "sprinkles" type = "checkbox" name = "strawberries"> sprinkles </label></div>
+		</div>
+
+		<div class="form-row">
+		<label for="message">Any other notes:</label>
+		<textarea id="message" placeholder="Enter any comments here..."></textarea>
+		</div> 
+
+
+		<div class="end-row">
+		<hr>
+		<label for = "termsandcond"> <input id = "termsandcond" type = "checkbox" name = "Terms" required > Accept Terms & Conditions </label>
+		</div>
+
+		<div class="form-row">
+		<button type = "submit"> Send </button>
+		<button type = "reset"> Reset </button>
+		</div>	
+
+	</form>
+
+</body>
+
+</html>

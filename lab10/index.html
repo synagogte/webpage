@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Animation Page | Syna Gogte </title>
+	<style>
+		body
+		{
+			background-color:pink;
+		}
+		#pig
+		{
+			position: relative;
+			padding-left: 1000px;
+			top: 500px;
+			animation: move 9s infinite;
+			
+		}
+		#pig img
+		{
+			width: 350px;
+			height: 350px;
+		}
+		@keyframes move
+		{
+			0%  {right:-100px; opacity: .25;}
+			100%  {right:1380px; opacity:1;}
+		}
+		#text{
+			position:absolute;
+			top: -7px;
+			right: 155px;
+			
+			font-size: 20px;
+		}
+		#text p
+		{
+			border: 5px solid white;
+			border-radius: 20%;
+			padding: 10px;
+		}
+		#bubble
+		{
+			position:absolute;
+			top: 67px;
+			right: 230px;
+			border:3px solid white;
+			border-radius: 50%;
+			padding:7px;
+		}
+		#bubble2
+		{
+			position:absolute;
+			top: 87px;
+			right: 250px;
+			border:3px solid white;
+			border-radius: 50%;
+			padding:5px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id = "pig">
+		<img src = "img/walking.png" alt = "walking">
+
+		<div id = "text"> 
+		<p id = "hi"> Hello! </p>
+		</div>
+		<div id = "bubble">
+		<!-- <p></p> -->
+		</div>
+		<div id = "bubble2">
+		<!-- <p></p> -->
+		</div>
+</div>
+
+</body>
