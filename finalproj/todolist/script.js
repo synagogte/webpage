@@ -9,7 +9,8 @@ function addTask()
 	{
 		let li = document.createElement("li") 
 		li.innerHTML = inputBox.value;
-		listContainer.appendChild(li);
+		var targetItem = listContainer.getElementsByClassName("checked");
+		listContainer.insertBefore(li, targetItem[0]);
 		let span = document.createElement("span");
 		span.innerHTML = "\u00d7";
 		li.appendChild(span);
